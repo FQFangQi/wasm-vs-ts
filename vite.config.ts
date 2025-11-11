@@ -5,6 +5,7 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/wasm-vs-ts/', // 添加这一行，仓库名称
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
